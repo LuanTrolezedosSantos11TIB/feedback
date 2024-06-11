@@ -19,7 +19,7 @@
 body{
     background-color: var(--very-dark-blue);
    height: 100svh;
-
+  
    display: flex;
    justify-content: center;
    align-items: center;
@@ -79,36 +79,39 @@ body{
    transition: all ease-in-out 0.3s;
 }
 
-.Botoes button:hover {
-    color: var(--white);
+.botoes button:hover {
+     color: var(--white);
+     background-color: var(--orange);
+     cursor: pointer;
+}
+
+.botoes button:focus{
+     color: var(--white);
+     background-color: var(--light-gray);
+}
+
+.card> a {
+    display: block;
+    width: 100px;
+    padding: 13px;
     background-color: var(--orange);
-    cursor: pointer;
-}
+    border: none;
+    border-radius: 22px;
 
-.Botoes button:focus{
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     color: var(--white);
-    background-color: var(--light-gray);
-}
+    text-align: center;
+    text-decoration: none;
 
-.card>button{
-   width: 100px;
-   padding: 13px;
-   background-color: var(--orange);
-   border: none;
-   border-radius: 22px;
-
-   font-size: 15px;
-   font-weight: 700;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   color: var(--white);
-
-   transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
 }
 
 
-.card > button:hover{
-   color: var(--orange);
-   background-color: var(--white);
-   cursor: pointer;
+.card > a :hover{
+    color: var(--orange);
+    background-color: var(--white);
+    cursor: pointer;
 }
